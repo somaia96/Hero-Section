@@ -1,14 +1,13 @@
 import Button from "./Button"
 
-const MainLeft = () => {
-    const handleGetStarted = ()=>{
+const MainLeftText = () => {
+    const handleGetStarted = () => {
         console.log("Get Started");
         window.location.href = "/#scroll"
     }
-    const handleWatchDemo = ()=>{
+    const handleWatchDemo = () => {
         console.log("Watch Demo");
-        window.location.href = "https://hero-section-e0dkumy9b-somaia96s-projects.vercel.app/"
-
+        // window.location.href = "https://hero-section-1-dusky.vercel.app"
     }
     return (
         <div className='flex-1 flex flex-col justify-center items-center lg:items-start lg:pl-28 text-start space-y-5'>
@@ -17,7 +16,8 @@ const MainLeft = () => {
             <div className="space-x-3 flex">
                 <Button
                     onClick={handleGetStarted}>
-                    Get Started</Button>
+                    Get Started
+                </Button>
                 <Button
                     onClick={handleWatchDemo}>
                     Watch Demo
@@ -26,4 +26,4 @@ const MainLeft = () => {
         </div>
     )
 }
-export default MainLeft
+export default MainLeftText
